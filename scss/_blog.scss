@@ -1,0 +1,87 @@
+.entrada-uno{
+	font-family: $nunito;
+	display: map-get($display-center,display);
+    justify-content: map-get($display-center,justify-content);
+    align-items: map-get($display-center,align-items);
+    flex-wrap: wrap;
+    flex-direction: column;
+   
+    padding: 32px 256px 16px 256px;
+
+	.titulo-uno{
+		display: map-get($display-center,display);
+		justify-content: map-get($display-center,justify-content);
+    	align-items:felex-start;
+    	flex-direction: column;
+    	width: 100%;
+		h1{
+			font-size:$titulos;
+			font-weight: 400;
+			color: $mivioleta;
+
+		}
+		
+	}
+
+	.img-luis{
+		display: map-get($display-center,display);
+		justify-content: flex-start;
+    	align-items:center;
+    	width: 100%;
+		img.luis-blog{
+			width: 100px;
+			padding-left: 8px;
+		}
+		h5{
+			padding-left: 8px;
+
+		}
+	}
+	.bajada{
+		font-size: $h3;
+		font-weight: 200;
+	}
+	.nota{
+		.nota-corpo{
+			font-size: $texto;
+					}
+	}
+	.hr{
+		border-bottom: 2px solid $mivioleta;
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px){
+	
+	.entrada-uno{
+	font-family: $nunito;
+	display: map-get($display-center,display);
+    justify-content: map-get($display-center,justify-content);
+    align-items: map-get($display-center,align-items);
+    flex-wrap: wrap;
+    flex-direction: column;
+       padding: 32px 8px 16px 8px;
+	
+		.titulo-uno{
+		display: map-get($display-center,display);
+		justify-content: map-get($display-center,justify-content);
+    	align-items:center;
+    	flex-direction: column;
+    	width: 100%;
+		h1{
+			font-size:2.5rem;
+			font-weight: 400;
+			color: $mivioleta;
+
+			}
+		
+		}
+		.bajada{
+		font-size: 1.8rem;
+		font-weight: 200;
+	}
+
+	}
+
+}
